@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#18221d">
+  <meta name="description" content="A first website concept for Itameshi, an Italian and Japanese restaurant in Olongapo. Business details are marked for confirmation.">
+  <title>Itameshi — Italian & Japanese Kitchen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="notice" role="note">
+    <span class="notice-dot" aria-hidden="true"></span>
+    <span>First website draft · Business details need owner confirmation</span>
+    <a href="#visit">Review details <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Itameshi home"><span class="brand-mark">i</span><span>itameshi<span class="brand-period">.</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <a href="#story">Our story</a>
+      <a href="#menu">The menu</a>
+      <a href="#moments">At the table</a>
+      <a class="nav-visit" href="#visit">Find us <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span>Olongapo</span><i aria-hidden="true"></i><span>Italian × Japanese</span></p>
+        <h1>Two cravings.<br><em>One happy</em> table.</h1>
+        <p class="hero-intro">Comforting favourites from Italy and Japan, brought together for the kind of meal that turns into a little more time around the table.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#menu">Explore the menu <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#visit">Plan a visit <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-footnote"><span class="sun-symbol" aria-hidden="true">✳</span><span>Good food, good company, no hurry.</span></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Decorative illustration of a pasta plate and Japanese rice bowl">
+        <div class="art-tag"><span>made for sharing</span><span>✳</span></div>
+        <div class="art-sun"></div>
+        <div class="plate plate-back"></div>
+        <div class="plate plate-front">
+          <div class="plate-rim"></div>
+          <div class="noodles">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <b class="tomato t1"></b><b class="tomato t2"></b><b class="leaf l1"></b><b class="leaf l2"></b>
+          </div>
+        </div>
+        <div class="chopsticks"><span></span><span></span></div>
+        <div class="art-caption"><span>ITALIAN</span><span class="caption-cross">+</span><span>JAPANESE</span></div>
+        <p class="art-disclaimer">Illustrative artwork · replace with Itameshi food photography</p>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Restaurant concept">
+      <div class="ticker-track"><span>Freshly made moments</span><b>✳</b><span>From two food-loving worlds</span><b>✳</b><span>Stay for one more bite</span><b>✳</b><span>Freshly made moments</span><b>✳</b></div>
+    </section>
+
+    <section class="story section-wrap" id="story">
+      <div class="section-label"><span>01</span><span>THE IDEA</span></div>
+      <div class="story-main">
+        <p class="eyebrow">A table with room for both</p>
+        <h2>Little bit of <em>Italy.</em><br>Little bit of <em>Japan.</em></h2>
+        <div class="story-bottom">
+          <p>Some days call for pasta. Some days call for a warm rice bowl. Here, you can follow either craving—and bring everyone along.</p>
+          <span class="stamp" aria-hidden="true">BUON<br>APPETITO<br><i>いただきます</i></span>
+        </div>
+      </div>
+      <div class="story-side"><span class="side-number">2</span><p>food traditions<br><b>at one table</b></p><span class="side-line"></span><p class="side-small">A draft story direction. Please confirm this reflects the restaurant.</p></div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-wrap menu-inner">
+        <div class="menu-heading">
+          <div><div class="section-label light"><span>02</span><span>GOOD THINGS TO EAT</span></div><h2>Find your <em>favourite.</em></h2></div>
+          <p>Browse a few menu directions. Exact dishes, descriptions, and prices are waiting for the official menu.</p>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter menu categories">
+          <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All favourites <span>03</span></button>
+          <button class="filter-chip" type="button" data-filter="japanese" aria-pressed="false">Japanese-inspired <span>02</span></button>
+          <button class="filter-chip" type="button" data-filter="italian" aria-pressed="false">Italian-inspired <span>02</span></button>
+        </div>
+        <div class="menu-grid" aria-live="polite">
+          <article class="menu-card" data-cuisine="japanese">
+            <div class="menu-card-art bowl-art"><span class="steam steam-1"></span><span class="steam steam-2"></span><span class="bowl-shape"><i></i><i></i><i></i></span><span class="art-index">A</span></div>
+            <div class="menu-card-copy"><p class="card-kicker">JAPANESE-INSPIRED <span>01</span></p><h3>Rice & comfort bowls</h3><p>Warm, satisfying bowls for a proper comfort-food moment.</p><small>Category concept · confirm dishes</small></div>
+          </article>
+          <article class="menu-card" data-cuisine="italian">
+            <div class="menu-card-art pasta-art"><span class="pasta-shape"><i></i><i></i><i></i><i></i><b></b><b></b></span><span class="art-index">B</span></div>
+            <div class="menu-card-copy"><p class="card-kicker">ITALIAN-INSPIRED <span>02</span></p><h3>Pasta & pizza</h3><p>Classic Italian-inspired favourites, ready for sharing.</p><small>Category concept · confirm dishes</small></div>
+          </article>
+          <article class="menu-card" data-cuisine="japanese italian">
+            <div class="menu-card-art together-art"><span class="circle circle-a"></span><span class="circle circle-b"></span><span class="circle circle-c"></span><span class="plus">+</span><span class="art-index">C</span></div>
+            <div class="menu-card-copy"><p class="card-kicker">THE ITAMESHI TABLE <span>03</span></p><h3>Mix, match, enjoy</h3><p>A little of what everyone loves, all in the same meal.</p><small>Concept card · replace with real menu item</small></div>
+          </article>
+        </div>
+        <div class="menu-footer"><span>Menu and item details are placeholders pending owner confirmation.</span><a href="https://www.facebook.com/itameshigapo/" target="_blank" rel="noreferrer">Check the Facebook page <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="moments section-wrap" id="moments">
+      <div class="moments-head"><div><div class="section-label"><span>03</span><span>THE LITTLE MOMENTS</span></div><h2>Come as you are.<br><em>Stay a little.</em></h2></div><p>Real Itameshi photos will bring this section to life. These panels are intentionally abstract until authentic images are available.</p></div>
+      <div class="moments-grid">
+        <div class="moment moment-one"><span class="moment-scribble">share<br>another?</span><span class="moment-label">THE FIRST BITE</span><div class="doodle-plate"><i></i><i></i><i></i></div><span class="placeholder-note">PHOTO PLACEHOLDER</span></div>
+        <div class="moment moment-two"><span class="moment-label">AROUND THE TABLE</span><div class="table-sun">✳</div><span class="placeholder-note">PHOTO PLACEHOLDER</span></div>
+        <div class="moment moment-three"><span class="moment-label">A LITTLE MORE TIME</span><div class="coffee-cup"><i></i></div><span class="placeholder-note">PHOTO PLACEHOLDER</span></div>
+      </div>
+    </section>
+
+    <section class="visit-section" id="visit">
+      <div class="visit-inner section-wrap">
+        <div class="section-label light"><span>04</span><span>COME ON BY</span></div>
+        <div class="visit-content">
+          <div><p class="eyebrow">Find a seat at the table</p><h2>See you <em>soon?</em></h2><p class="visit-intro">Call ahead or get directions. These details come from a public directory listing and need to be confirmed by the restaurant before launch.</p></div>
+          <div class="visit-card">
+            <span class="confirm-badge"><i></i> DIRECTORY DETAILS · VERIFY</span>
+            <div class="detail-row"><span>ADDRESS</span><p>21 W 2nd St<br>Olongapo, Zambales, Philippines</p></div>
+            <div class="detail-row"><span>PHONE</span><p><a href="tel:+639669646641">+63 966 964 6641 <span aria-hidden="true">↗</span></a></p></div>
+            <div class="detail-row"><span>HOURS</span><p>Not shown in this first draft<br><small>Please confirm current opening hours.</small></p></div>
+            <div class="visit-actions"><a class="button button-cream" href="https://maps.google.com/?q=21+W+2nd+St,+Olongapo,+Philippines" target="_blank" rel="noreferrer">Open directions <span aria-hidden="true">↗</span></a><a class="text-link light-link" href="https://www.facebook.com/itameshigapo/" target="_blank" rel="noreferrer">Facebook page <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </div>
+        <div class="visit-foot"><span>Need a quick answer? Call the restaurant.</span><span>ADDRESS + PHONE FROM A THIRD-PARTY LISTING</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap"><a class="brand footer-brand" href="#top"><span class="brand-mark">i</span><span>itameshi<span class="brand-period">.</span></span></a><p>Italian & Japanese kitchen · Olongapo</p><div><a href="#top">Back to top ↑</a><span>Website concept · 2026</span></div></footer>
+</body>
+</html>
